@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: black;
+      }
+      section {
+        display: flex;
+      }
+      #uiDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+      button,
+      input,
+      select {
+        padding: 0.8em;
+        margin: 0.5em;
+        background-color: rgb(57, 57, 57);
+        color: rgb(227, 227, 227);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="canvasDiv"></div>
+      <div id="uiDiv"></div>
+    </section>
+    <script src="sketch.js"></script>
+    <script src="editImage.js"></script>
+  </body>
+</html>
