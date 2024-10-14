@@ -1,10 +1,14 @@
+let selectEle;
 let inputImg;
 let bgImages = [];
-let selectEle;
+let fgImages = [];
 
 function preload() {
   for (let i = 0; i < 8; i++) {
     bgImages[i] = loadImage(`./background-images/b${i}.jpg`);
+  }
+  for (let i = 0; i < 8; i++) {
+    fgImages[i] = loadImage(`./background-images/foreground/f${i}.png`);
   }
 }
 
@@ -32,6 +36,7 @@ function setup() {
   saveButton.parent(uiDiv);
 
   imageMode(CENTER);
+  angleMode(DEGREES);
 }
 
 function handleFile(file) {
